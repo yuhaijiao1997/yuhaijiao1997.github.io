@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css" media="screen">
+	<link rel="stylesheet" href="css/skin_0.css" type="text/css" media="screen" id="cssFile">
+	<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="js/jquery.jqzoom.js"></script>
+
+	<script>
+		$(function(){
+			$("#skin li").click(function(){
+				var c=$(this).index()
+				$(this).addClass("selected").siblings("li").removeClass("selected")
+				$("#cssFile").attr("href","css/skin_"+c+".css")
+			})
+			$(".ul1 li:eq(0)").click(function(){
+				$(".pic").attr("src","images/blue_one_small.jpg")
+			})
+			$(".ul1 li:eq(1)").click(function(){
+				$(".pic").attr("src","images/blue_three_small.jpg")
+			})
+			$(".ul1 li:eq(2)").click(function(){
+				$(".pic").attr("src","images/blue_two_small.jpg")
+			})	
+			$(":button").click(function(){
+                  $(this).addClass("dv").siblings().removeClass("dv")
+            })  
+            $(".btn1").click(function(){
+                $(".text1").show().siblings().not(".input").hide()
+            })     
+           	$(".btn2").click(function(){
+                $(".text2").show().siblings().not(".input").hide()
+            }) 
+            $(".btn3").click(function(){
+                $(".text3").show().siblings().not(".input").hide()
+            }) 
+            $(".i1").click(function(){
+                $(".pic").attr("src","images/green_one_small.jpg")
+                $(".b1").attr("src","images/green_one.jpg")
+                $(".b2").attr("src","images/green_two.jpg")
+                $(".b3").attr("src","images/green_two.jpg")
+                $(".c1").text("颜色：绿白")
+                $(".r2 span").text("220元")
+           	})
+            $(".i2").click(function(){
+                $(".pic").attr("src","images/blue_one_small.jpg")
+                 $(".b1").attr("src","images/blue_one.jpg")
+                $(".b2").attr("src","images/blue_two.jpg")
+                $(".b3").attr("src","images/blue_three.jpg")
+                 $(".c1").text("颜色：蓝白")
+                 $(".r2 span").text("260元")
+            })
+            $(".i3").click(function(){
+                $(".pic").attr("src","images/yellow_one_small.jpg")
+                $(".b1").attr("src","images/yellow_one.jpg")
+                $(".b2").attr("src","images/yellow_two.jpg")
+                $(".b3").attr("src","images/yellow_three.jpg")
+                 $(".c1").text("颜色：黄白")
+            })                     	
+		})
+	</script>
+</head>
+<body>
+	<div id="header-bg">
+		<div id="header">
+			<div class="logo"><img src="images/logo.gif"></div>
+			<input type="text" placeholder="请输入商品名称">
+			<div class="logo-right">
+				<ul id="skin">
+					<li id="skin-0" title="灰色" class="selected">灰色</li>
+					<li id="skin-1" title="紫色">紫色</li>
+					<li id="skin-2" title="红色">红色</li>
+					<li id="skin-3" title="天蓝色">天蓝色</li>
+					<li id="skin-4" title="橙色">橙色</li>
+					<li id="skin-5" title="淡绿色">淡绿色</li>
+				</ul>
+			</div>
+			<div id="clear"></div>
+			<div class="nav-bg">
+				<ul class="nav">
+					<li>首页</li>
+					<li>品牌</li>
+					<li>男装</li>
+					<li>女装</li>
+					<li>鞋包配饰</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="main">
+		<div class="main-left">
+			<h1>商品分类</h1>
+			<h2>推荐品牌</h2>
+			<ul>
+				<li>耐克</li>
+				<li class="li1">阿迪达斯<img src="images/hot.gif"></li>
+				<li>达芙妮</li>
+				<li>李宁</li>
+				<li>安踏</li>
+				<li>奥康</li>
+				<li class="li1">骆驼<img src="images/hot.gif"></li>
+				<li>特步</li>
+			</ul>
+			<h2>女装</h2>
+			<ul>
+				<li>昵大衣</li>
+				<li>T恤</li>
+				<li>羽绒</li>
+				<li>衬衫</li>
+				<li>羊绒衫</li>
+				<li>针织</li>
+				<li连衣裙></li>
+				<li>皮外套</li>
+			</ul>
+			<h2>男装</h2>
+			<ul>
+				<li>衬衫</li>
+				<li>T恤衫</li>
+				<li>夹克</li>
+				<li>大皮衣</li>
+				<li>风衣</li>
+				<li>牛仔裤</li>
+				<li>西服</li>
+				<li>卫衣</li>
+			</ul>
+			<h2>鞋包配饰</h2>
+			<ul>
+				<li>围巾</li>
+				<li>旅行箱</li>
+				<li>真皮包</li>
+				<li>韩版</li>
+				<li>达芙妮</li>
+				<li>单肩包</li>
+				<li>毛线</li>
+				<li>清仓靴子</li>
+			</ul>
+		</div>
+		<div class="article">
+			<div class="main-center">
+				<div class="jqzoom">
+					<img src="images/blue_one_small.jpg" class="pic">
+				</div>
+				<img src="images/look.gif" class="pot">
+				<ul class="ul1">
+					<li><img src="images/blue_one.jpg" class="b1"></li>
+					<li><img src="images/blue_two.jpg" class="b2"></li>
+					<li><img src="images/blue_three.jpg" class="b3"></li>
+				</ul>
+				<div id="clear"></div>
+				<div class="center-bot">
+				<div class="input">
+                    <input type="button" value="产品介绍" class="btn1">
+                    <input type="button" value="产品属性" class="btn2">
+                    <input type="button" value="产品标尺码" class="btn3">
+                </div>
+                <div class="text1">
+                    <p>沿用风靡百年的经典全棉牛津面料，通过领先的液氨整理技术，使面料的抗皱性能更上一层。延续简约、舒适、健康设计理念，推出免烫、易打理的精细免烫牛津纺长衬衫系列。</p>
+                </div>
+                <div class="text2">
+                    <p>名单上反而让是对方立刻决定送在消费升级快点放假在对方手机看附件的福建省地方沙发斯蒂芬而非山东干发斯蒂芬地方</p>
+                </div>
+                <div class="text3">
+                    <p>的幸福的人个梵蒂冈的疯狂就没人分割单开门了否认他就买一个的感觉没了惹急昆明钢铁吃过没开发的两个，免费的公开非官方的</p>
+               	</div>
+               	</div>
+            </div>              
+			<div class="main-right">
+				<h2>免烫高支棉条纹衬衣</h2>
+                <p>全新净瓶高支棉衬衫再次提升品质，精选100%新疆长绒织造而成，平整度好，短融少；80-100高支双股经纬交织，带来无与伦比的美享受；而且面料反光效果好，具有漂亮的光泽，质感商家，有利于免烫效果的维持！</p>
+                <p>价格：379.00元</p>
+                <p>促销：<span>200.00</span>元</p>
+                <p class="c1">颜色：蓝白</p>
+                <img src="images/green.jpg" class="i1">
+                <img src="images/blue.jpg" class="i2">
+                <img src="images/yellow.jpg" class="i3">
+                <p>尺寸：未选择</p>
+                <p>数量：</p>
+                <select>
+                   	<option>1</option>
+                </select>
+                <p>总计：200元</p>
+                <p>给商品评分:</p>
+                <div class="deng">
+                	<img src="images/star-matrix.gif">
+                </div>
+                <div class="guo">
+                    <img src="images/btn_cart.png">
+                </div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>Copyright &#169 2009-2012 JaneShop Inc.</p>
+	</div>
+</body>
+</html>
