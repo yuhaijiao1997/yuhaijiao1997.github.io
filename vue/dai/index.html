@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>代办事项</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app">
+    <h1>代办事项</h1>
+    <header>
+        <input type="text" v-model="message" @keyup.enter="btn">
+        <button v-on:click="btn">添加</button>
+    </header>
+    <ul>
+        <li v-for="(list,index) in lists">
+            <span>{{list}}</span>
+            <button v-on:click="del(index)">删除</button>
+        </li>
+    </ul>
+</div>
+
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

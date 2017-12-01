@@ -1,0 +1,7 @@
+在百度中输入Git 
+找到Git for window
+下载
+运行
+在Git Bash Here中输入node -v 
+在输入npm -v
+最后输入 npm install vue
