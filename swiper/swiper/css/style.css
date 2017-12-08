@@ -236,4 +236,73 @@ h2 small{
 
 /*     * 第三屏样式  开始 *      */
 
+.s3 div:nth-of-type(1){
+    width: 80%;
+    height: 380px;
+    position:absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -40%;
+}
+.s3 div:nth-of-type(1) p{
+    background: -webkit-radial-gradient(circle,#0c0022,#006275); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(circle,#0c0022,#006275); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(circle,#0c0022,#006275); /* Firefox 3.6 - 15 */
+    background: radial-gradient(circle,#0c0022,#006275); /* 标准的语法（必须放在最后） */
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius:50%;
+}
+.s3 div:nth-of-type(1) p:nth-of-type(1){
+    width: 134px;
+    height: 134px;
+    line-height:134px;
+    top: 50%;
+    left: 50%;
+    margin-left: -67px;
+    margin-top: -67px;
+}
+.s3 div:nth-of-type(1) p:nth-of-type(2){
+    top:7%;
+    left:14%;
+}
+.s3 div:nth-of-type(1) p:nth-of-type(3){
+    top:7%;
+    right:14%;
+}
+.s3 div:nth-of-type(1) p:nth-of-type(4){
+    top:41%;
+    left:-7%
+}
+.s3 div:nth-of-type(1) p:nth-of-type(5){
+    top:41%;
+    right:-7%;
+}
+.s3 div:nth-of-type(1) p:nth-of-type(6){
+    bottom:7%;
+    left:14%;
+}
+.s3 div:nth-of-type(1) p:nth-of-type(7){
+    bottom:7%;
+    right:14%;
+}
+.s3 .title{
+    width: 75%;
+    height: 66px;
+    font-size:14px;
+    line-height:33px;
+    border-left:3px solid #00e6b6;
+    padding-left: 20px;
+    text-align:left;
+    position:absolute;
+    left:15%;
+    bottom:12%;
+}
+
+
+
+
 
