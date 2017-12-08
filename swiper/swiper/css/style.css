@@ -37,6 +37,19 @@ body {
     margin-left: -13.5px;
     transform:rotateZ(90deg);
 }
+
+.s1,
+.s2,
+.s3{
+    background-image: url(../img/bj.png);
+    position: relative;
+    height: 100%;
+    color:#00e6b6;
+}
+
+
+/*----------头部-----------*/
+
 h2{
     font-size:24px;
     position:relative;
@@ -69,19 +82,38 @@ h2 small{
     letter-spacing: 5px;
 }
 
+/*----------底部-----------*/
+
+.footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.footer p{
+    color:#00e6b6;
+    font-weight:bold;
+    line-height:32px;
+}
+.footer .bu{
+    height: 70px;
+}
+.footer .bu img{
+    height: 70px;
+    position:absolute;
+}
+.footer .bu img:nth-of-type(1){
+    left: 0;
+}
+.footer .bu img:nth-of-type(2){
+    left: -45px;
+}
+
 
 
 
 /*     * 第一屏样式  开始 *      */
 
 
-.s1,
-.s2,
-.s3{
-    background-image: url(../img/bj.png);
-    position: relative;
-    height: 100%;
-}
 
 /*-------------header-------------*/
 .s1 .header img:nth-of-type(1){
@@ -131,37 +163,15 @@ h2 small{
 .s1 .main .img9{
     font-size:20px;
     width: 223px;
+    color:#000;
     background-image: url(../img/9.png);
     background-size:contain;
     margin:auto;
 }
 
 /*-------------footer-------------*/
-.s1 .footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-.s1 .footer p{
-    color:#00e6b6;
-    font-weight:bold;
-    line-height:32px;
-}
 .s1 .footer p:nth-of-type(2){
     margin-bottom: 60px;
-}
-.s1 .footer p:nth-of-type(3){
-    height: 70px;
-}
-.s1 .footer img{
-    height: 70px;
-    position:absolute;
-}
-.s1 .footer img:nth-of-type(1){
-    left: 0;
-}
-.s1 .footer img:nth-of-type(2){
-    left: -45px;
 }
 .s1 .music{
     position: absolute;
@@ -177,42 +187,7 @@ h2 small{
 
 /*     * 第二屏样式  开始 *      */
 
-
-.s2{
-    color:#00e6b6;
-}
-/*.s2 h2{*/
-    /*font-size:24px;*/
-    /*position:relative;*/
-    /*top: 10%;*/
-/*}*/
-/*.s2 h2::before,*/
-/*.s2 h2::after{*/
-    /*content: '';*/
-    /*width: 80px;*/
-    /*height: 20px;*/
-    /*display:inline-block;*/
-    /*position: absolute;*/
-    /*margin-top: 5px;*/
-/*}*/
-/*.s2 h2::before{*/
-    /*background:url("../img/14.png");*/
-    /*background-size:contain;*/
-    /*margin-left: -95px;*/
-/*}*/
-/*.s2 h2::after{*/
-    /*background:url("../img/13.png");*/
-    /*background-size:contain;*/
-    /*margin-left: 63px;*/
-    /*top:0;*/
-/*}*/
-/*.s2 h2 small{*/
-    /*display:block;*/
-    /*font-size:12px;*/
-    /*margin-top: 10px;*/
-    /*letter-spacing: 5px;*/
-/*}*/
-.s2 div{
+.s2 div:nth-of-type(1){
     width: 80%;
     height: 380px;
     position:absolute;
@@ -220,23 +195,23 @@ h2 small{
     left: 50%;
     margin-left: -40%;
 }
-.s2 div img{
+.s2 div:nth-of-type(1) img{
     width: 100%;
     height: 100%;
     position:absolute;
     left: 0;
 }
-.s2 div p{
+.s2 div:nth-of-type(1) p{
     margin-bottom: 10px;
     padding:0 10%;
     font-size:14px;
     text-align:left;
     line-height:22px;
 }
-.s2 div p:nth-of-type(1){
+.s2 div:nth-of-type(1) p:nth-of-type(1){
     padding-top: 25px;
 }
-.s2 div span{
+.s2 div:nth-of-type(1) span{
     /*渐变*/
     background: -moz-linear-gradient(left, #00ecfc, #00fd9d); /*Mozilla*/
     background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00ecfc), to(#00fd9d)); /*Old gradient for webkit*/
@@ -259,39 +234,6 @@ h2 small{
 
 
 
-/*     * 第二屏样式  开始 *      */
+/*     * 第三屏样式  开始 *      */
 
-.s3{
-    color:#00e6b6;
-}
-/*.s3 h2{*/
-    /*font-size:24px;*/
-    /*position:relative;*/
-    /*top: 10%;*/
-/*}*/
-/*.s3 h2::before,*/
-/*.s3 h2::after{*/
-    /*content: '';*/
-    /*width: 80px;*/
-    /*height: 20px;*/
-    /*display:inline-block;*/
-    /*position: absolute;*/
-    /*margin-top: 5px;*/
-/*}*/
-/*.s3 h2::before{*/
-    /*background:url("../img/14.png");*/
-    /*background-size:contain;*/
-    /*margin-left: -95px;*/
-/*}*/
-/*.s3 h2::after{*/
-    /*background:url("../img/13.png");*/
-    /*background-size:contain;*/
-    /*margin-left: 63px;*/
-    /*top:0;*/
-/*}*/
-/*.s3 h2 small{*/
-    /*display:block;*/
-    /*font-size:12px;*/
-    /*margin-top: 10px;*/
-    /*letter-spacing: 5px;*/
-/*}*/
+
