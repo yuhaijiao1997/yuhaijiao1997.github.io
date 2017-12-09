@@ -40,7 +40,11 @@ body {
 
 .s1,
 .s2,
-.s3{
+.s3,
+.s4,
+.s5,
+.s6,
+.s7{
     background-image: url(../img/bj.png);
     position: relative;
     height: 100%;
@@ -212,7 +216,7 @@ h2 small{
     padding-top: 25px;
 }
 .s2 div:nth-of-type(1) span{
-    /*渐变*/
+    /*线性渐变*/
     background: -moz-linear-gradient(left, #00ecfc, #00fd9d); /*Mozilla*/
     background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00ecfc), to(#00fd9d)); /*Old gradient for webkit*/
     background: -webkit-linear-gradient(left, #00ecfc, #00fd9d); /*new gradient for Webkit*/
@@ -245,6 +249,7 @@ h2 small{
     margin-left: -40%;
 }
 .s3 div:nth-of-type(1) p{
+    /*径向渐变*/
     background: -webkit-radial-gradient(circle,#0c0022,#006275); /* Safari 5.1 - 6.0 */
     background: -o-radial-gradient(circle,#0c0022,#006275); /* Opera 11.6 - 12.0 */
     background: -moz-radial-gradient(circle,#0c0022,#006275); /* Firefox 3.6 - 15 */
