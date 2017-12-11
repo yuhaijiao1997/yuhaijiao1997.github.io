@@ -111,6 +111,34 @@ h2 small{
 .footer .bu img:nth-of-type(2){
     left: -45px;
 }
+.music{
+    position:absolute;
+    top:5%;
+    right:5%;
+    z-index:66;
+}
+#mp3Btn{
+    width: 10px;
+    transform: rotate(0deg);
+    animation:music 4s;
+    /*匀速*/
+    animation-timing-function:linear;
+    /*播放次数无限次*/
+    animation-iteration-count:infinite;
+    /*动画播放*/
+    animation-play-state:running;
+}
+@keyframes music {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
 
 
 
@@ -177,14 +205,6 @@ h2 small{
 .s1 .footer p:nth-of-type(2){
     margin-bottom: 60px;
 }
-.s1 .music{
-    position: absolute;
-    top: 3%;
-    right: 5%;
-}
-.s1 .music img{
-    width: 12px;
-}
 
 
 
@@ -193,7 +213,7 @@ h2 small{
 
 .s2 div:nth-of-type(1){
     width: 80%;
-    height: 380px;
+    height: 55%;
     position:absolute;
     top: 23%;
     left: 50%;
@@ -242,7 +262,7 @@ h2 small{
 
 .s3 div:nth-of-type(1){
     width: 80%;
-    height: 380px;
+    height: 55%;
     position:absolute;
     top: 20%;
     left: 50%;
@@ -250,10 +270,10 @@ h2 small{
 }
 .s3 div:nth-of-type(1) p{
     /*径向渐变*/
-    background: -webkit-radial-gradient(circle,#0c0022,#006275); /* Safari 5.1 - 6.0 */
-    background: -o-radial-gradient(circle,#0c0022,#006275); /* Opera 11.6 - 12.0 */
-    background: -moz-radial-gradient(circle,#0c0022,#006275); /* Firefox 3.6 - 15 */
-    background: radial-gradient(circle,#0c0022,#006275); /* 标准的语法（必须放在最后） */
+    background: -webkit-radial-gradient(circle,rgba(12, 0, 34, 0),rgba(0, 236, 252, 0.62)); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(circle,rgba(12, 0, 34, 0),rgba(0, 236, 252, 0.62)); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(circle,rgba(12, 0, 34, 0),rgba(0, 236, 252, 0.62)); /* Firefox 3.6 - 15 */
+    background: radial-gradient(circle,rgba(12, 0, 34, 0),rgba(0, 236, 252, 0.62)); /* 标准的语法（必须放在最后） */
 
     position: absolute;
     width: 60px;
@@ -309,5 +329,66 @@ h2 small{
 
 
 
+/*     * 第四屏样式  开始 *      */
+
+
+
+
+
+
+
+
+
+
+/*     * 第五屏样式  开始 *      */
+.s5 .title{
+    position:absolute;
+    width: 80%;
+    height: 55%;
+    top:25%;
+    left:50%;
+    margin-left: -40%;
+}
+.s5 .title div{
+    background-image: url("../img/12.png");
+    background-size: contain;
+    width: 46%;
+    height: 47%;
+    position:absolute;
+}
+.s5 .title div:nth-of-type(1){
+    top:0%;
+    left:0%;
+}
+.s5 .title div:nth-of-type(2){
+    top:0%;
+    right:0%;
+}
+.s5 .title div:nth-of-type(3){
+    bottom:0%;
+    left:0%;
+}
+.s5 .title div:nth-of-type(4){
+    bottom:0%;
+    right:0%;
+}
+.s5 .title div img{
+    margin-top: 7%;
+}
+.s5 .title div p{
+    margin-bottom: 5px;
+}
+.s5 .title div p:nth-of-type(2){
+    /*线性渐变*/
+    background: -moz-linear-gradient(left, #00ecfc, #00fd9d); /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00ecfc), to(#00fd9d)); /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #00ecfc, #00fd9d); /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #00ecfc, #00fd9d); /*Opera11*/
+
+    width: 80%;
+    color:#000;
+    margin-left: 10%;
+    border-radius:10px;
+}
 
 
