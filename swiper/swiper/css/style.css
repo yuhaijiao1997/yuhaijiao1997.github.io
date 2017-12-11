@@ -345,24 +345,60 @@ h2 small{
     left: 0;
 }
 .s4 .title h3{
-    width: 50%;
+    width: 45%;
     height: 20px;
     line-height: 20px;
     position:absolute;
 }
 .s4 .title h3:nth-of-type(1){
-    top:0%;
-    left:0%;
+    top:5%;
+    left:7%;
 }
 .s4 .title h3:nth-of-type(2){
-    top:0%;
+    top:5%;
     left:50%;
 }
 .s4 .title h3 img{
-    height: 20px;
+    height: 25px;
+    position:absolute;
+    left:12%;
 }
 .s4 .title h3 span{
     font-size: 14px;
+}
+.s4 .title div{
+    position:absolute;
+    height: 20%;
+    text-align:left;
+}
+.s4 .title div:nth-of-type(1){
+    top:15%;
+    left:0%;
+}
+.s4 .title div:nth-of-type(2){
+    top:35%;
+    left:0%;
+}
+.s4 .title div:nth-of-type(3){
+    top:60%;
+    left:0%;
+}
+.s4 .title div p{
+    width: 100%;
+    height: 20%;
+}
+.s4 .title div p img{
+    height:80%;
+}
+.s4 .title div p:nth-of-type(1){
+    margin-bottom: 10px;
+}
+.s4 .title div p:nth-of-type(1) span:nth-of-type(2){
+    color:#fff;
+}
+.s4 .title div p:nth-of-type(2) span,
+.s4 .title div p:nth-of-type(3) span{
+    font-size:12px;
 }
 
 
