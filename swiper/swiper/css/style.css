@@ -33,9 +33,23 @@ body {
     left:50%;
     right:auto;
     top:auto;
-    bottom:5%;
+    bottom:2%;
     margin-left: -13.5px;
-    transform:rotateZ(90deg);
+    transform:rotateZ(-90deg);
+    width: 17px;
+    height: 35px;
+    background-size: contain;
+    animation:buttonnext 1.5s infinite;
+}
+@keyframes buttonnext {
+    0%{
+        bottom:2%;
+        opacity:1;
+    }
+    100%{
+        bottom:5%;
+        opacity:0;
+    }
 }
 
 .s1,
@@ -107,9 +121,39 @@ h2 small{
 }
 .footer .bu img:nth-of-type(1){
     left: 0;
+    animation:footerimg1 1.5s;
+    /*匀速*/
+    animation-timing-function:linear;
+    /*播放次数无限次*/
+    animation-iteration-count:infinite;
+    /*逆向*/
+    animation-direction:alternate;
+}
+@keyframes footerimg1 {
+    0%{
+        left:0;
+    }
+    100%{
+        left: 25px;
+    }
 }
 .footer .bu img:nth-of-type(2){
     left: -45px;
+    animation:footerimg2 1.5s;
+    /*匀速*/
+    animation-timing-function:linear;
+    /*播放次数无限次*/
+    animation-iteration-count:infinite;
+    /*逆向*/
+    animation-direction:alternate;
+}
+@keyframes footerimg2 {
+    0%{
+        left:-45px;
+    }
+    100%{
+        left: -65px;
+    }
 }
 .music{
     position:absolute;
@@ -209,6 +253,9 @@ h2 small{
 
 
 
+
+
+
 /*     * 第二屏样式  开始 *      */
 
 .s2 div:nth-of-type(1){
@@ -258,6 +305,13 @@ h2 small{
 
 
 
+
+
+
+
+
+
+
 /*     * 第三屏样式  开始 *      */
 
 .s3 div:nth-of-type(1){
@@ -300,7 +354,7 @@ h2 small{
 }
 .s3 div:nth-of-type(1) p:nth-of-type(4){
     top:41%;
-    left:-7%
+    left:-7%;
 }
 .s3 div:nth-of-type(1) p:nth-of-type(5){
     top:41%;
@@ -326,6 +380,12 @@ h2 small{
     left:15%;
     bottom:12%;
 }
+
+
+
+
+
+
 
 
 
@@ -357,6 +417,7 @@ h2 small{
 .s4 .title h3:nth-of-type(2){
     top:5%;
     left:50%;
+    color:#00b5ff;
 }
 .s4 .title h3 img{
     height: 25px;
@@ -400,6 +461,18 @@ h2 small{
 .s4 .title div p:nth-of-type(3) span{
     font-size:12px;
 }
+.s4 .title div p:nth-of-type(3) span{
+    color:#00bcfc;
+}
+.s4 .title .p{
+    position: absolute;
+    bottom:7%;
+    left:5%;
+    font-size:14px;
+    height: 35px;
+    width: 90%;
+}
+
 
 
 
@@ -410,6 +483,8 @@ h2 small{
 
 
 /*     * 第五屏样式  开始 *      */
+
+
 .s5 .title{
     position:absolute;
     width: 80%;
@@ -460,4 +535,111 @@ h2 small{
     border-radius:10px;
 }
 
+
+
+
+
+
+/*     * 第六屏样式  开始 *      */
+
+
+.s6 .title{
+    position:absolute;
+    width: 80%;
+    height: 57%;
+    top:23%;
+    left:50%;
+    margin-left: -40%;
+    border-left:2px dotted #00fd9d;
+}
+.s6 .title .main{
+    width: 100%;
+    height: 33.33%;
+    position:absolute;
+}
+.s6 .title .main:nth-of-type(1){
+    top:0%;
+    left:0%;
+}
+.s6 .title .main:nth-of-type(2){
+    top:35%;
+    left:0%;
+}
+.s6 .title .main:nth-of-type(3){
+    top:70%;
+    left:0%;
+}
+.s6 .title .main .time{
+    background:url("../img/tiao.png");
+    background-size: cover;
+    width: 90%;
+    height: 20%;
+    margin-left: 10%;
+    color:#000;
+    line-height:28px;
+    text-align:left;
+    padding-left: 10px;
+}
+.s6 .title .main .text{
+    width: 90%;
+    height: 60%;
+    background:url("../img/p.png");
+    background-size:cover;
+    text-align:left;
+    margin-left: 10%;
+    margin-top: 10px;
+    font-size:14px;
+    line-height:22px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.s6 .title .main img{
+    position:absolute;
+    top:-16%;
+    left:-9%;
+}
+
+
+
+
+
+
+
+/*     * 第七屏样式  开始 *      */
+
+.s7 .title{
+    position:absolute;
+    width: 80%;
+    height: 57%;
+    top:23%;
+    left:50%;
+    margin-left: -40%;
+}
+.s7 .title img{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left: 0;
+}
+.s7 .title form{
+    width: 90%;
+    height: 70%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.s7 .title form input{
+    width: 100%;
+    height: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border:1px solid #00fd9d;
+    background:#fff;
+}
+.s7 .title form input:nth-of-type(4){
+    background-color:#00f2ca;
+    color:#fff;
+}
+.s7 .title p:nth-of-type(1){
+    margin-top: 15px;
+}
 
