@@ -240,8 +240,14 @@ h2 small{
     font-size:20px;
     width: 223px;
     color:#000;
-    background-image: url(../img/9.png);
-    background-size:contain;
+
+    /*线性渐变*/
+    background: -moz-linear-gradient(left, #00ecfc, #00fd9d); /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00ecfc), to(#00fd9d)); /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #00ecfc, #00fd9d); /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #00ecfc, #00fd9d); /*Opera11*/
+
+    border-radius:10px;
     margin:auto;
 }
 
