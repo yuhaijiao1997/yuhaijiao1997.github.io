@@ -643,3 +643,26 @@ h2 small{
     margin-top: 15px;
 }
 
+@media screen and (max-height: 580px){
+    .s1 .footer p:nth-of-type(2){
+        margin-bottom: 20px;
+    }
+    .s2 div:nth-of-type(1) p{
+        font-size:14px;
+        line-height:16px;
+        margin-bottom: 5px;
+    }
+    .s2 div:nth-of-type(1) p:nth-of-type(1) {
+        padding-top: 15px;
+    }
+    .s5 .title div p {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    .s6 .title {
+        height: 63%;
+    }
+    .s6 .title .main .text {
+    height: 66%;
+    }
+}
