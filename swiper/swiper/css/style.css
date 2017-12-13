@@ -501,7 +501,7 @@ h2 small{
 }
 .s5 .title div{
     background-image: url("../img/12.png");
-    background-size: contain;
+    background-size: cover;
     width: 45%;
     height: 45%;
     position:absolute;
