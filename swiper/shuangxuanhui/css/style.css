@@ -480,6 +480,13 @@ h2::after{
     color:#fff;
 }
 
+
+
+
+
+/*-----------修改----------*/
+
+
 @media screen and (max-height:580px) {
     .s1 .img1 {
         width: 100%;
@@ -501,5 +508,29 @@ h2::after{
     }
     .s1 .main img:nth-of-type(5) {
         width: 61%;
+    }
+    .s2 .text p{
+        line-height:16px;
+        margin-bottom: 5px;
+    }
+    .s2 .text .main p:nth-of-type(1){
+        font-size:18px;
+        margin-bottom:12px;
+    }
+    .s2 .footer{
+        margin-top: 20px;
+    }
+    .s3 .main p{
+        line-height:16px;
+        margin-bottom: 5px;
+    }
+    .s3 .main p span{
+        font-size:20px;
+    }
+    .s4 ul li:nth-child(1){
+        margin-top: 11%;
+    }
+    .s6 .main p{
+        line-height:25px;
     }
 }
