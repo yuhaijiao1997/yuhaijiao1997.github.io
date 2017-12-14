@@ -9,11 +9,13 @@ var swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
     },
     //切换效果
-    effect : 'flip',
-    flipEffect: {
-        slideShadows : true,
-        limitRotation : true,
-    },
+
+    //effect : 'flip',
+    //flipEffect: {
+    //    slideShadows : true,
+    //    limitRotation : true,
+    //},
+
     //动画效果
     on:{
         init: function(){
