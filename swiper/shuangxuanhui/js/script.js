@@ -8,6 +8,13 @@ var swiper = new Swiper('.swiper-container', {
     navigation: {
         nextEl: '.swiper-button-next',
     },
+    //切换效果
+    effect : 'flip',
+    flipEffect: {
+        slideShadows : true,
+        limitRotation : true,
+    },
+    //动画效果
     on:{
         init: function(){
             swiperAnimateCache(this); //隐藏动画元素
