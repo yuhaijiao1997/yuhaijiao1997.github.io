@@ -374,7 +374,7 @@ h2::after{
 .s5  div{
     position: absolute;
     width: 44%;
-    height: 25%;
+    height: 26%;
 }
 .s5  div:nth-of-type(1){
     top:18%;
@@ -404,7 +404,7 @@ h2::after{
 }
 .s5  div p{
     color:#4c4545;
-    line-height:35px;
+    line-height:37px;
 }
 
 
