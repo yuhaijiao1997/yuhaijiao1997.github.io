@@ -374,7 +374,7 @@ h2::after{
 .s5  div{
     position: absolute;
     width: 44%;
-    height: 24%;
+    height: 25%;
 }
 .s5  div:nth-of-type(1){
     top:18%;
@@ -401,6 +401,10 @@ h2::after{
 }
 .s5  div img:nth-of-type(2){
     width:98%;
+}
+.s5  div p{
+    color:#4c4545;
+    line-height:35px;
 }
 
 
@@ -451,7 +455,7 @@ h2::after{
     width: 70%;
     height: 70%;
     position: absolute;
-    top: 21%;
+    top: 23%;
     left: 50%;
     margin-left: -35%;
 }
@@ -501,16 +505,19 @@ h2::after{
         left:13%;
     }
     .s1 .main img:nth-of-type(3) {
+        top: 60%;
+        left: 13%;
         width: 84%;
     }
     .s1 .main img:nth-of-type(4) {
+        top: 35%;
         width: 83%;
     }
     .s1 .main img:nth-of-type(5) {
         width: 61%;
     }
     .s2 .text p{
-        line-height:16px;
+        line-height:20px;
         margin-bottom: 5px;
     }
     .s2 .text .main p:nth-of-type(1){
@@ -521,7 +528,7 @@ h2::after{
         margin-top: 20px;
     }
     .s3 .main p{
-        line-height:16px;
+        line-height:19px;
         margin-bottom: 5px;
     }
     .s3 .main p span{
@@ -530,7 +537,13 @@ h2::after{
     .s4 ul li:nth-child(1){
         margin-top: 11%;
     }
+    .s5  div{
+        height: 28%;
+    }
     .s6 .main p{
-        line-height:25px;
+        line-height:28px;
+    }
+    .s7 .main{
+        top: 25%;
     }
 }

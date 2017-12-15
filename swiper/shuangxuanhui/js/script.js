@@ -10,11 +10,10 @@ var swiper = new Swiper('.swiper-container', {
     },
     //切换效果
 
-    //effect : 'flip',
-    //flipEffect: {
-    //    slideShadows : true,
-    //    limitRotation : true,
-    //},
+    effect : 'fade',
+    fadeEffect: {
+        crossFade: false,
+    },
 
     //动画效果
     on:{
