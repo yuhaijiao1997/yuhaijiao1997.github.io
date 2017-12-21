@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>baidu</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="warper">
+			<my-header></my-header>
+			<my-logo></my-logo>
+			<ul id="my-top">
+				<my-top v-for="top in tops" v-bind="top"></my-top>
+			</ul>
+			<section>
+				<my-section v-for="div in divs" v-bind="div"></my-section>
+			</section>
+			<my-footer></my-footer>
+		</div>
+		
+		
+		<script src="js/vue.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
